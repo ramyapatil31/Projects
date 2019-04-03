@@ -1,0 +1,80 @@
+<ion-header padding no-border>
+  <ion-toolbar>
+     <ion-icon slot="start" name="arrow-back" (click)="back()"></ion-icon>
+      <ion-title>
+        Dashboard
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    
+       <ion-card>
+       <ion-img src="/assets/movie1.jpg"></ion-img>
+        <ion-card-content>
+          <ion-label><strong>How To Train Your Dragon</strong><ion-badge color="danger" slot="end">90%<ion-icon name="heart"></ion-icon></ion-badge></ion-label>        
+         <br> <ion-card-subtitle>21 Mar 2019</ion-card-subtitle>
+         <br> <p>U | Fantasy | Animated</p>
+         <ion-button expand="full" color="primary">Book Tickets</ion-button>
+        </ion-card-content>
+      </ion-card> 
+
+      <!--<ion-slides #myslide (ionSliderLoad)="ionslider(myslide)" speed='300' loop="true" pager="true" autoplay="5000">
+
+      <ion-slide>
+        <img  src="/assets/movie1.jpg">
+      </ion-slide>
+        <ion-slide>
+           <img  src="/assets/movie1.jpg">
+          </ion-slide>
+        <ion-slide>
+            <img  src="/assets/movie1.jpg">
+              </ion-slide>
+          <ion-slide>
+          <img  src="/assets/movie1.jpg">
+          </ion-slide>
+      </ion-slides>-->
+    
+      <!--<ion-fab vertical="bottom" horizontal="start" slot="fixed">
+          <ion-fab-button  color="danger">
+            <ion-icon name="more"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-list side="end">
+              <ion-fab-button><ion-icon name="settings"></ion-icon></ion-fab-button>
+              <ion-fab-button><ion-icon name="calendar"></ion-icon></ion-fab-button>
+              <ion-fab-button><ion-icon name="ice-cream"></ion-icon></ion-fab-button>
+              <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+            </ion-fab-list>
+        </ion-fab>-->
+         <ion-tabs>
+            <ion-tab-bar slot="bottom" translucent="true">
+              <ion-tab-button tab="Movies">
+                <ion-icon color="danger" name="videocam"></ion-icon>
+                <ion-label>Movies</ion-label>
+              </ion-tab-button>
+          
+              <ion-tab-button tab="bookings">
+                <ion-icon color="danger" name="create"></ion-icon>
+                <ion-label>Create Bookings</ion-label>
+              </ion-tab-button>
+          
+              <ion-tab-button tab="offers">
+                <ion-icon color="danger" name="star"></ion-icon>
+                <ion-label>Offers</ion-label>
+              </ion-tab-button>
+  
+              <ion-tab-button tab="add-ons">
+                  <ion-icon color="danger" name="add-circle"></ion-icon>
+                  <ion-label>Add-ons</ion-label>
+              </ion-tab-button>
+  
+              <ion-tab-button tab="view-bookings">
+                    <ion-icon color="danger" name="eye"></ion-icon>
+                    <ion-label>View Bookings</ion-label>
+              </ion-tab-button>
+          
+            </ion-tab-bar>
+        </ion-tabs> 
+
+  </ion-content>
+  

@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Register
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+    <ion-card-content>
+        <ion-item>
+            <ion-icon color="primary" slot="start" name="at"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Email"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon color="primary" slot="start" name="person"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="User Id"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon color="primary" slot="start" name="calendar"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="DOB"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon color="primary" slot="start" name="key"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Password"></ion-input>
+        </ion-item>  
+        <ion-item>
+            <ion-icon color="primary" slot="start" name="thumbs-up"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Confirm Password"></ion-input>
+        </ion-item> 
+        
+        <ion-row>
+          <ion-col style="text-align: center">
+            <ion-button color="primary" expand="full" shape="round">Register</ion-button><br>
+            Have a BIL account? <a (click)="loginPage()">Login</a><br><br>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>     
+    </ion-card>
+</ion-content>
